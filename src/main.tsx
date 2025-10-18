@@ -1,9 +1,12 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
+import { Canvas } from '@react-three/fiber'
+import Experience from './Experience.tsx'
+import "./style.css"
 
 createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+  <>
+    <Canvas shadows>
+        <Experience></Experience>
+    </Canvas>
+  </>
 )
